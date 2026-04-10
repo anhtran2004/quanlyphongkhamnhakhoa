@@ -1,0 +1,167 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: #f5f7fb;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+
+/* MAIN */
+
+.main {
+    flex: 1;
+    padding: 40px;
+    overflow: auto;
+}
+
+.tab {
+    display: none;
+}
+
+.tab.active {
+    display: block;
+}
+
+
+/* PROFILE */
+
+.profile-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.profile-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.edit-section {
+    margin-top: 20px;
+}
+
+.edit-section input {
+    display: block;
+    margin: 10px auto;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 200px;
+}
+
+.edit-section button {
+    margin: 5px;
+    padding: 8px 12px;
+    background: #20b2aa;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+/* INFO */
+
+.info-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.grid label {
+    font-size: 14px;
+    color: #777;
+}
+
+.grid p {
+    font-weight: 600;
+}
+
+
+/* PASSWORD SECTION */
+
+.password-section {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.password-section h3 {
+    margin-top: 0;
+}
+
+.password-section input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.password-section button {
+    margin-top: 10px;
+    padding: 10px 18px;
+    background: #20b2aa;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.home-btn {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 120px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #20b2aa;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* TABLE */
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+.waiting {
+    color: orange;
+    font-weight: 600;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tài khoản cá nhân</title>
+    <link rel="stylesheet" href="account.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- MAIN CONTENT -->
+
+        <div class="main">
+
+            <!-- PROFILE -->
+
+            <div id="profile" class="tab active">
+
+                <div class="profile-card">
+
+                    <img id="profileImage" src="images/bs nu.jpg" alt="Avatar người dùng">
+
+                    <h2 id="profileName">Người dùng</h2>
+
+                    <p id="profileRole">Bệnh nhân</p>
+
+                    <div class="edit-section">
+                        <input type="text" id="nameInput" placeholder="Nhập tên mới">
+                        <input type="file" id="photoInput" accept="image/*">
+                        <button onclick="editName()">Sửa tên</button>
+                        <button onclick="uploadPhoto()">Thêm ảnh</button>
+                    </div>
+
+                </div>
+
+                <div class="info-card">
+
+                    <h3>Thông tin cá nhân</h3>
+
+                    <div class="grid">
+
+                        <div>
+                            <label>Email</label>
+                            <p id="profileEmail">user@example.com</p>
+                            <input type="email" id="emailInput" placeholder="Nhập email mới">
+                            <button onclick="editEmail()">Cập nhật</button>
+                        </div>
+
+                        <div>
+                            <label>Số điện thoại</label>
+                            <p id="phone">0912345678</p>
+                            <input type="text" id="phoneInput" placeholder="Nhập số điện thoại mới">
+                            <button onclick="editPhone()">Cập nhật</button>
+                        </div>
+
+                        <div>
+                            <label>Địa chỉ</label>
+                            <p id="address">Hà Nội</p>
+                            <input type="text" id="addressInput" placeholder="Nhập địa chỉ mới">
+                            <button onclick="editAddress()">Cập nhật</button>
+                        </div>
+
+                        <div>
+                            <label>Mã bệnh nhân</label>
+                            <p id="patientId">BN1023</p>
+
+                            <!-- ĐỔI MẬT KHẨU -->
+
+                            <div class="password-section">
+
+                                <h3>Đổi mật khẩu</h3>
+
+                                <input type="password" placeholder="Mật khẩu hiện tại">
+
+                                <input type="password" placeholder="Mật khẩu mới">
+
+                                <input type="password" placeholder="Xác nhận mật khẩu">
+
+                                <button>Đổi mật khẩu</button>
+
+                                <a href="home.html">
+                                    <button class="home-btn">← Trang chủ</button>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <script src="account.js"></script>
+
+</body>
+
+</html>
