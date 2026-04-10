@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Xem Lịch Khám</title>
+    <link rel="stylesheet" href="./seecalendar.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Danh Sách Lịch Khám</h1>
+        <p>Quản lý và theo dõi các lịch đã đặt</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Họ tên</th>
+                    <th>SĐT</th>
+                    <th>Ngày khám</th>
+                    <th>Ghi chú</th>
+                    <th>Thao tác</th>
+                </tr>
+            </thead>
+
+            <tbody id="tableData"></tbody>
+        </table>
+
+        <div class="actions">
+            <button class="btn-home" onclick="goHome()">← Trang chủ</button>
+        </div>
+
+    </div>
+
+    <script src="seecalendar.js"></script>
+</body>
+
+</html>
