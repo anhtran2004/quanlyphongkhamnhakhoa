@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7f6;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    gap: 25px;
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 15px;
+}
+
+.left {
+    flex: 2;
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+.left h1 {
+    color: #0f766e;
+    margin-bottom: 5px;
+}
+
+.left p {
+    color: #6b7280;
+    margin-bottom: 15px;
+}
+
+.row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-group {
+    flex: 1;
+    margin-top: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+textarea {
+    height: 110px;
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn-submit {
+    flex: 2;
+    background: linear-gradient(to right, #2563eb, #3b82f6);
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.btn-submit:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(37, 99, 235, 0.2);
+}
+
+.btn-back {
+    flex: 1;
+    background: #e5e7eb;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.btn-back:hover {
+    background: #d1d5db;
+}
+
+.right {
+    flex: 1;
+}
+
+.right img {
+    width: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.info {
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    margin-top: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.support {
+    background: #d1fae5;
+    padding: 20px;
+    border-radius: 16px;
+    margin-top: 15px;
+}
+
+.support h3 {
+    margin-top: 0;
+}
+
+.support button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: white;
+    transition: 0.2s;
+}
+
+.support button:hover {
+    background: #f3f4f6;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .btn-group {
+        flex-direction: column;
+    }
+}

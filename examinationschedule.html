@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Đặt Lịch Khám</title>
+    <link rel="stylesheet" href="./examinationschedule.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- LEFT -->
+        <div class="left">
+            <h1>Đặt lịch hẹn trực tuyến</h1>
+            <p>Vui lòng điền thông tin, chúng tôi sẽ liên hệ sớm nhất.</p>
+
+            <!-- Họ tên + SĐT -->
+            <div class="row">
+                <div class="form-group">
+                    <label>Họ và tên</label>
+                    <input type="text" id="name" placeholder="Nguyễn Văn A">
+                    <span class="error" id="errorName"></span>
+                </div>
+
+                <div class="form-group">
+                    <label>Số điện thoại</label>
+                    <input type="text" id="phone" placeholder="0901234567">
+                    <span class="error" id="errorPhone"></span>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label>Dịch vụ quan tâm</label>
+                <select id="service">
+                    <option>Khám tổng quát & Tư vấn</option>
+                    <option>Niềng răng</option>
+                    <option>Trồng răng Implant</option>
+                </select>
+            </div>
+
+
+            <div class="row">
+                <div class="form-group">
+                    <label>Ngày hẹn</label>
+                    <input type="date" id="date">
+                    <span class="error" id="errorDate"></span>
+                </div>
+
+                <div class="form-group">
+                    <label>Khung giờ</label>
+                    <select id="time">
+                        <option>Sáng (08:00 - 11:30)</option>
+                        <option>Chiều (13:30 - 17:30)</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label>Ghi chú</label>
+                <textarea id="note" placeholder="Mô tả tình trạng..."></textarea>
+            </div>
+
+            <!-- BUTTON -->
+            <div class="btn-group">
+                <button class="btn-submit" onclick="submitForm()">
+                    Gửi yêu cầu đặt lịch
+                </button>
+
+                <button class="btn-back" onclick="goHome()">
+                    ← Trang chủ
+                </button>
+            </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="right">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1918747.648581863!2d107.24333443218647!3d14.804720381694457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219c792252a13%3A0xfc14e3a044436487!2zxJDDoCBO4bq1bmcsIEjhuqNpIENow6J1LCDEkMOgIE7hurVuZywgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1775208539525!5m2!1svi!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="info">
+                <p><strong>Địa chỉ</strong><br>Đường Ngô Quyền, Quận Hải Châu</p>
+                <p><strong>Hotline</strong><br>1900 8888</p>
+                <p><strong>Giờ làm việc</strong><br>08:00 - 20:00</p>
+            </div>
+
+            <div class="support">
+                <h3>Bạn cần hỗ trợ?</h3>
+                <button>Chat Zalo</button>
+                <button>Facebook</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./examinationschedule.js"></script>
+</body>
+
+</html>
