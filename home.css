@@ -1,0 +1,332 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* TOPBAR */
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+    background: #f5f5f5;
+}
+
+.topbar input {
+    width: 50%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+.contact {
+    font-weight: 600;
+}
+
+.btn-book {
+    background: #1e60a8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: white;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 20px;
+    color: #20B2AA;
+}
+
+.navbar nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.navbar nav a:hover {
+    color: #20B2AA;
+}
+
+
+/* HERO */
+
+.hero {
+    height: 550px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/ảnh răng.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.hero-text {
+    color: white;
+    padding-left: 80px;
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+}
+
+.hero-text h2 {
+    font-size: 28px;
+    color: #48D1CC;
+}
+
+.hero-text p {
+    margin: 15px 0;
+}
+
+.btn-main {
+    padding: 12px 25px;
+    background: #20B2AA;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+/* BREADCRUMB */
+
+.breadcrumb {
+    padding: 10px 40px;
+    background: #eee;
+    font-size: 14px;
+}
+
+
+/* SERVICES */
+
+.services {
+    text-align: center;
+    padding: 60px;
+}
+
+.service-list {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.service {
+    background: white;
+    padding: 25px;
+    width: 220px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-8px);
+}
+
+
+/* DOCTORS */
+
+.doctors {
+    text-align: center;
+    padding: 60px;
+    background: #f5f5f5;
+}
+
+.doctor-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.doctor img {
+    width: 260px;
+    /* TĂNG TO ẢNH */
+    height: 260px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.doctor img:hover {
+    transform: scale(1.1);
+}
+
+
+/* BLOG */
+
+.blog {
+    padding: 60px 80px;
+    background: #f9fbfd;
+}
+
+.blog h2 {
+    font-size: 32px;
+    color: #1e60a8;
+}
+
+.blog-card {
+    display: flex;
+    align-items: center;
+    background: #eaf2f8;
+    padding: 25px;
+    border-radius: 15px;
+    gap: 20px;
+}
+
+.blog-card img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+.blog-btn button {
+    margin-right: 10px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(to right, gold, orange);
+    color: white;
+    cursor: pointer;
+}
+
+.blog-text {
+    margin-top: 20px;
+    padding: 20px;
+    background: #eef3f7;
+    border-left: 5px solid #1e60a8;
+    border-radius: 10px;
+}
+
+
+/* USER */
+
+.user-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* MENU BUTTON */
+
+.menu-btn {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 1000;
+    background: #20B2AA;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+
+/* SIDEBAR */
+
+.sidebar {
+    position: fixed;
+    left: -260px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background: white;
+    transition: 0.3s;
+    padding-top: 70px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar li {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.sidebar li:hover {
+    background: #20B2AA;
+    color: white;
+}
+
+
+/* FLOATING CONTACT */
+
+.floating-contact {
+    position: fixed;
+    right: 20px;
+    top: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.floating-contact div {
+    background: white;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* MODAL */
+
+.modal {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    width: 300px;
+    margin: 10% auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.modal-content button {
+    background: #20B2AA;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+}
